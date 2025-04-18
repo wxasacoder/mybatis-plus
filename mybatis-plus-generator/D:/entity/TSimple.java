@@ -1,4 +1,4 @@
-package com.baomidou.demo.velocity.entity;
+package com.baomidou.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -13,10 +13,10 @@ import java.time.LocalDateTime;
  * </p>
  *
  * @author baomidou
- * @since 2025-03-27
+ * @since 2025-04-18
  */
 @TableName("T_SIMPLE")
-public class Simple implements Serializable {
+public class TSimple implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -140,7 +140,7 @@ public class Simple implements Serializable {
 
     @Override
     public String toString() {
-        return "Simple{" +
+        return "TSimple{" +
             "id = " + id +
             ", name = " + name +
             ", age = " + age +

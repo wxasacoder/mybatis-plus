@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.baomidou'
+version = '3.5.12-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+
+dependencies {
+    implementation project(':mybatis-plus')
+    implementation project(':mybatis-plus-annotation')
+    implementation project(':mybatis-plus-bom')
+    implementation project(':mybatis-plus-core')
+    implementation project(':mybatis-plus-extension')
+    implementation project(':mybatis-plus-generator')
+    implementation project(':mybatis-plus-jsqlparser-support')
+    implementation project(':mybatis-plus-spring')
+    implementation project(':spring-boot-starter')
+}
